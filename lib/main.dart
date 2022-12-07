@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:test/views/home_view.dart';
+import 'dart:ui';
 
 void main() {
   runApp(const MyApp());
@@ -15,6 +16,6 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
         theme: ThemeData(),
-        home: const home());
+        home: Home());
   }
 }
