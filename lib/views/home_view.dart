@@ -50,9 +50,28 @@ class _HomeState extends State<Home> {
       ),
       body: <Widget>[
         Container(
-          color: Colors.red,
           alignment: Alignment.center,
-          child: const Text('Page 1'),
+          child: Column(
+            children: const [
+              Padding(
+                padding: EdgeInsets.only(top: 100.0),
+                child: CircleAvatar(
+                  radius: 150,
+                  backgroundImage: AssetImage('assets/images/1.jpg'),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.only(top: 45.0),
+                child: Text("I'm Steve Milner \n WEB DESIGNER",
+                    style: TextStyle(
+                        fontSize: 45,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black)),
+              ),
+              Text(
+                  "I'm a Tunisian based web designer & frontend \n developer focused on crafting clean & userfriendly experiences,\n I am passionate about building excellent software that improves the lives of those around me.")
+            ],
+          ),
         ),
         Container(
           color: Colors.green,
