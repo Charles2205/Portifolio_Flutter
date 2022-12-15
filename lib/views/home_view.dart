@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -50,7 +48,28 @@ class _HomeState extends State<Home> {
               label: 'Contact'),
         ],
       ),
-      body: Container(),
+      body: <Widget>[
+        Container(
+          color: Colors.red,
+          alignment: Alignment.center,
+          child: const Text('Page 1'),
+        ),
+        Container(
+          color: Colors.green,
+          alignment: Alignment.center,
+          child: const Text('Page 2'),
+        ),
+        Container(
+          color: Colors.blue,
+          alignment: Alignment.center,
+          child: const Text('Page 3'),
+        ),
+        Container(
+          color: Colors.yellow,
+          alignment: Alignment.center,
+          child: const Text('Page 4'),
+        ),
+      ][currentPageIndex],
     );
   }
 }
